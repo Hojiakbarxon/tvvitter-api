@@ -7,10 +7,10 @@ export async function createSuperAdmin() {
         let existedSuperAdmin = await User.findOne({ role: Roles.SUPERADMIN })
         if (!existedSuperAdmin) {
             let superAdmin = await User.create({
-                fullName: "Hojiakbarxon Olimxo'jayev",
-                profilePhoto: "superadmin.img",
-                email: "olimxojayev22.2007@gmail.com",
-                userName: "Hojiakbar_superadmin",
+                fullName: envConfig.ADMIN.FULLNAME,
+                profilePhoto: envConfig.ADMIN.PROFILE_PHOTO,
+                email: envConfig.ADMIN.EMAIL,
+                userName: envConfig.ADMIN.USERNAME,
                 hashedPassword: await crypto.decode(envConfig.ADMIN.PASSWORD),
                 role: Roles.SUPERADMIN,
                 gender: Genders.MALE

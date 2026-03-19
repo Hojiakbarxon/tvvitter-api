@@ -18,6 +18,9 @@ export let envConfig = {
     },
     ADMIN : {
         USERNAME : String(process.env.SUPERADMIN_USERNAME),
-        PASSWORD : String(process.env.SUPERADMIN_PASSWORD)
+        PASSWORD : String(process.env.SUPERADMIN_PASSWORD),
+        FULLNAME : String(process.env.SUPERADMIN_FULLNAME),
+        PROFILE_PHOTO : String(process.env.SUPERADMIN_PROFILEPHOTO),
+        EMAIL : String(process.env.SUPERADMIN_EMAIL)
     }
 }

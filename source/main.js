@@ -4,7 +4,7 @@ import { connectDb } from './config/db.js'
 import { errorHandle } from './middlewares/error-handle.js'
 import indexRoute from './routers/index-route.js'
 import cookieParser from 'cookie-parser'
-import { createSuperAdmin } from './helpers/create-admin.js'
+import { createSuperAdmin } from './helpers/create-super-admin.js'
 import ApiError from './utils/custom-error.js'
 let app = express()
 app.use(express.json())
