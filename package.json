@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "npm install && node main.js",
-    "dev": "npm install && nodemon main.js"
+    "start": "npm install && nodemon source/main.js",
+    "dev": "nodemon source/main.js"
   },
   "keywords": [],
   "author": "",
