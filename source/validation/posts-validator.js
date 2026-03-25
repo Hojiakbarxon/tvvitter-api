@@ -17,8 +17,7 @@ class PostValidator {
             description: Joi.string().optional(),
             photo: Joi.string().optional(),
             video: Joi.string().optional(),
-            audio: Joi.string().optional(),
-            userId : Joi.string().hex().length(24).optional()
+            audio: Joi.string().optional()
         })
 
         return post.validate(data)
