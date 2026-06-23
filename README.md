@@ -93,8 +93,8 @@ source/
 
 ### 1. Clone the repo
 ```bash
-git clone https://github.com/Hojiakbarxon/tvvitter.git
-cd tvvitter
+git clone https://github.com/Hojiakbarxon/tvvitter-api.git
+cd tvvitter-api
 ```
 
 ### 2. Install dependencies
